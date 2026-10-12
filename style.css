@@ -114,6 +114,16 @@ h3 {
     text-shadow: 0 0 3px #c953ff, 0 0 5px #e000c2;
 }
 
+.unity-title {
+    margin-bottom: 5px;
+    text-shadow: 0 0 3px #2c2c2c, 0 0 5px #fafafa;
+}
+
+.bouclette-title {
+    margin-bottom: 5px;
+    text-shadow: 0 0 3px #00eeff, 0 0 5px #f8f6f8;
+}
+
 .warningAudio-desc {
     color: #ca4d4d;
     margin-bottom: 5px;
