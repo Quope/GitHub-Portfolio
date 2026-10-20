@@ -10,7 +10,7 @@
   "menu.contact": "Contact",
 
   "about.title": "À propos de moi",
-  "about.text": "Étudiant en développement de jeux spécialisé en programmation, avec un fort intérêt pour le C++ et Unreal Engine. Passionné par les systèmes de gameplay, l’architecture moteur et l’optimisation des performances. Je compose également de la musique et fais du sound design.",
+  "about.text": "Étudiant en développement de jeux vidéo spécialisé en programmation gameplay. Je travaille principalement avec le C++, Unreal Engine et les Blueprints, ainsi qu'avec le C# et Unity.<br>J'aime travailler sur les systèmes de gameplay, de personnages et de caméra afin de chercher à créer des controls réactif et des mouvements de caméra les plus fluides possible afin de transmettre des sensations agréable au joueur. On joue à un jeu pour se divertir, pas pour le subir.<br> Mon objectif est de devenir Gaemplay Programmer afin de pouvoir interagir directement avec le joueur et lui transmettre les sensations voulu du jeu.",
 
   "firstYear.title": "Projets de Première Année",
   "firstYear.sywar.desc": "Système de combat tour par tour avec des zones cliquables pour choisir différentes actions à effectuer. Réaliser en C++ à l'aide de SFML en 1 semaine.",
