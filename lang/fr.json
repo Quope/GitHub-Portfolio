@@ -6,11 +6,12 @@
   "menu.bestProjects": "Mes Meilleurs Projets",
   "menu.firstYear": "Première Année",
   "menu.secondYear": "Deuxième Année",
+  "menu.thirdYear": "Troisième Année",
   "menu.audio": "Audio",
   "menu.contact": "Contact",
 
   "about.title": "À propos de moi",
-  "about.text": "Étudiant en développement de jeux vidéo spécialisé en programmation gameplay. Je travaille principalement avec le C++, Unreal Engine et les Blueprints, ainsi qu'avec le C# et Unity.<br>J'aime travailler sur les systèmes de gameplay, de personnages et de caméra afin de chercher à créer des controls réactif et des mouvements de caméra les plus fluides possible afin de transmettre des sensations agréable au joueur. On joue à un jeu pour se divertir, pas pour le subir.<br> Mon objectif est de devenir Gaemplay Programmer afin de pouvoir interagir directement avec le joueur et lui transmettre les sensations voulu du jeu.",
+  "about.text": "Étudiant en développement de jeux vidéo spécialisé en programmation gameplay. Je travaille principalement avec le C++, Unreal Engine et les Blueprints, ainsi qu'avec le C# et Unity.<br>J'aime travailler sur les systèmes de gameplay, de personnages et de caméra afin de chercher à créer des controls réactif et des mouvements de caméra les plus fluides possible pour transmettre des sensations agréable au joueur. On joue à un jeu pour se divertir, pas pour le subir.<br> Mon objectif est de devenir Gaemplay Programmer afin de pouvoir interagir directement avec le joueur et lui transmettre les sensations que sont censés procuré le jeu.",
 
   "firstYear.title": "Projets de Première Année",
   "firstYear.sywar.desc": "Système de combat tour par tour avec des zones cliquables pour choisir différentes actions à effectuer. Réaliser en C++ à l'aide de SFML en 1 semaine.",
