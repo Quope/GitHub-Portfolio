@@ -287,9 +287,9 @@ iframe {
     text-decoration: none;
     border-radius: 0.4em;
     font-weight: 600;
-    background: linear-gradient(120deg, #e92f2f, #ffffff, #e74848);
+    background: linear-gradient(120deg, #d43e3e, #e78d8d, #e74848);
     background-size: 300% 300%;
-    animation: waveGradient 2s ease infinite;
+    animation: waveGradient 3s ease infinite;
 }
 
     .btn-itch img {
