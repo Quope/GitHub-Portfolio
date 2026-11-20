@@ -226,7 +226,7 @@ a.tile::before { transform: translate(7px, 7px); }
 /* =========================
    PROJECT CARDS
 ========================= */
-.card, .tile { position: relative; isolation: isolate; }
+.card, .tile { position: relative; isolation: isolate; } /*permet de bien placer les éléments*/
 .card { margin-bottom: 52px; padding: 30px; transition: transform .3s ease; }
 /* panneau principal (bordure néon) */
 .card::after, .tile::after {
@@ -243,13 +243,13 @@ a.tile::before { transform: translate(7px, 7px); }
 .card:hover { transform: translate(-3px, -3px); }
 .card:hover::before { transform: translate(11px, 11px); }
 .card:hover::after, .tile:hover::after { box-shadow: 0 0 28px rgba(0,229,255,.35); }
-/* variations de couleur : cyan / bleu nuit / blanc */
-.card:nth-of-type(6n+1) { --blk: linear-gradient(135deg, #00e5ff, #00a8dd); }
-.card:nth-of-type(6n+2) { --blk: linear-gradient(135deg, #fff, #00e5ff); }
-.card:nth-of-type(6n+3) { --blk: linear-gradient(135deg, #1d3f8f, #00e5ff); }
-.card:nth-of-type(6n+4) { --blk: linear-gradient(135deg, #fff, #7f9fd6, #1d3f8f); }
-.card:nth-of-type(6n+5) { --blk: linear-gradient(90deg, #00a8dd, #fff, #00e5ff); }
-.card:nth-of-type(6n)   { --blk: linear-gradient(160deg, #1d3f8f, #e8f6ff); }
+/* variations de couleur */
+.card:nth-of-type(6n+1) { --blk: linear-gradient(135deg, #ff0000, #ffffff); }
+.card:nth-of-type(6n+2) { --blk: linear-gradient(135deg, #ff9900, #ffffff); }
+.card:nth-of-type(6n+3) { --blk: linear-gradient(135deg, #fbff00, #ffffff); }
+.card:nth-of-type(6n+4) { --blk: linear-gradient(135deg, #15ff00, #ffffff); }
+.card:nth-of-type(6n+5) { --blk: linear-gradient(135deg, #0044ff, #ffffff); }
+.card:nth-of-type(6n)   { --blk: linear-gradient(135deg, #49007a, #00e5ff); }
 .card h3 {
     display: inline; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;
     font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; color: #fff;
