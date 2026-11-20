@@ -237,19 +237,13 @@ a.tile::before { transform: translate(7px, 7px); }
 /* second fond décalé */
 .card::before, .tile::before {
     content: ""; position: absolute; inset: 0; z-index: -2; border-radius: 24px;
-    background: var(--blk, linear-gradient(135deg, #0000, #00e5ff));
+    background: var(--blk, linear-gradient(135deg, #0000, #240042));
     transform: translate(8px, 8px); transition: transform .3s ease;
 }
 .card:hover { transform: translate(-3px, -3px); }
 .card:hover::before { transform: translate(11px, 11px); }
 .card:hover::after, .tile:hover::after { box-shadow: 0 0 28px rgba(0,229,255,.35); }
-/* variations de couleur */
-.card:nth-of-type(6n+1) { --blk: linear-gradient(135deg, #ffffff, #00e5ff); }
-.card:nth-of-type(6n+2) { --blk: linear-gradient(135deg, #0000, #6200ff); }
-.card:nth-of-type(6n+3) { --blk: linear-gradient(135deg, #ffffff, #00e5ff); }
-.card:nth-of-type(6n+4) { --blk: linear-gradient(135deg, #0000, #6200ff); }
-.card:nth-of-type(6n+5) { --blk: linear-gradient(135deg, #ffffff, #00e5ff); }
-.card:nth-of-type(6n)   { --blk: linear-gradient(135deg, #0000, #6200ff); }
+
 .card h3 {
     display: inline; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;
     font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; color: #fff;
