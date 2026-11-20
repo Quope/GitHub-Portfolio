@@ -117,16 +117,17 @@ header > p { max-width: 640px; margin-top: 26px; font-size: 1.25rem; color: #94a
     font: 700 clamp(.85rem, 2.4vw, 1.15rem) 'Orbitron', sans-serif; letter-spacing: 1.5px; text-transform: uppercase;
     color: #fff; text-shadow: 0 0 6px var(--cyan);
     background: radial-gradient(circle at top, #1e3a5f, var(--night));
-    border: 1.5px solid var(--cyan); border-radius: 10px; box-shadow: 5px 5px 0 var(--cyan2);
+    animation: cyberGlow 2s ease-in-out infinite, cyberGlowBorder 2s ease-in-out infinite;
 }
+@keyframes cyberGlowBorder { 0%,100% { border: 5px outset #ffffff; border-radius: 3px; } 65% { border: 5px outset #00ff9d; border-radius: 3px; } }
+@keyframes cyberGlow { 0%,100% { box-shadow: 0 0 5px var(--cyan); } 50% { box-shadow: 0 0 20px #00ff9d; } }
 
 .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .chips span {
-    padding: 4px 13px; font: 500 .78rem 'JetBrains Mono', monospace; color: #9fb4d4;
-    background: rgba(15,23,42,.6); border: 1px solid rgba(0,229,255,.3); border-radius: 99px;
-    transition: border-color .2s, color .2s;
+    padding: 4px 13px; font: 500 .78rem 'JetBrains Mono', monospace; color: #ffffff;
+    background: rgba(15,23,42,.6); border: 1px solid var(--cyan); border-radius: 99px;
+    box-shadow: 0 0 8px rgba(0,229,255,.3);
 }
-.chips span:hover { border-color: var(--cyan); color: #fff; }
 
 .cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
 
@@ -177,17 +178,9 @@ header > p { max-width: 640px; margin-top: 26px; font-size: 1.25rem; color: #94a
 ========================= */
 section { position: relative; max-width: 1100px; margin: auto; padding: 70px 24px; }
 
-/* séparateur animé (clin d'oeil à la V1) */
-section::before {
-    content: ""; display: block; height: 3px; width: 65%; margin: 0 auto 56px; border-radius: 3px;
-    background: linear-gradient(90deg, var(--cyan), var(--cyan2), var(--cyan));
-    background-size: 300% 100%; animation: wave 4s linear infinite;
-}
-#about::before, #my-best-projects::before { display: none; }
-
 h2 {
     display: block; margin-bottom: 36px; padding-left: 16px;
-    font-size: clamp(1.6rem, 4.5vw, 2.4rem); font-weight: 800; color: #9fffff;
+    font-size: clamp(1.6rem, 4.5vw, 2.4rem); font-weight: 800; color: #ffffff;
     border-left: 6px solid #00c8ff; text-shadow: 0 0 3px #00ffff, 0 0 6px #00ffff, 0 0 20px rgba(0,229,255,.45);
 }
 #projects-second-year h2 { color: #a7ffa4; border-color: #09ff00; text-shadow: 0 0 3px #09ff00, 0 0 6px #6aff65, 0 0 20px rgba(9,255,0,.35); }
@@ -237,7 +230,7 @@ a.tile::before { transform: translate(7px, 7px); }
 /* second fond décalé */
 .card::before, .tile::before {
     content: ""; position: absolute; inset: 0; z-index: -2; border-radius: 24px;
-    background: var(--blk, linear-gradient(135deg, #0000, #240042));
+    background: var(--blk, linear-gradient(135deg, #0000, #1e3a5f));
     transform: translate(8px, 8px); transition: transform .3s ease;
 }
 .card:hover { transform: translate(-3px, -3px); }
@@ -351,4 +344,55 @@ footer {
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .fl, h1::after, section::before, body::before, .audio-card p::before, .btn { animation: none; }
+}
+
+/* =========================
+   SEPERATOR
+========================= */
+.separator-animated {
+    height: 3px;
+    width: 65%;
+    margin: 30px auto;
+    background: linear-gradient(90deg, #00FFFF, #00A8DD, #00FFFF);
+    background-size: 300% 300%;
+    animation: waveLine 4s ease infinite;
+    border-radius: 3px;
+}
+
+@keyframes waveLine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.separator-animated-project{
+    height: 3px;
+    width: 45%;
+    margin: 30px auto;
+    background: linear-gradient(90deg, #00FFFF, #00A8DD, #00FFFF);
+    background-size: 300% 300%;
+    animation: waveLine 4s ease infinite;
+    border-radius: 3px;
+}
+
+@keyframes waveLine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
