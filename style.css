@@ -151,7 +151,7 @@ header > p { max-width: 640px; margin-top: 26px; font-size: 1.25rem; color: #94a
     background-size: 300% 300%; transition: transform .2s, box-shadow .3s;
 }
 .btn-github { color: #000; background-image: linear-gradient(120deg, #00ffff, #00a8dd, #00ffff); animation: waveGradient 4s ease infinite; }
-.btn-itch { color: #fff; background-image: linear-gradient(120deg, #d43e3e, #e78d8d, #e74848); animation: waveGradient 3s ease infinite; }
+.btn-itch { color: #ffffff; background-image: linear-gradient(120deg, #d43e3e, #e78d8d, #e74848); animation: waveGradient 3s ease infinite; }
 .btn {
     --fill: #fff; margin: 0; padding: calc(.7em - 2px) calc(1.3em - 2px); border: 2px solid transparent; color: #0b1220;
     background: linear-gradient(var(--fill), var(--fill)) padding-box,
@@ -166,7 +166,6 @@ header > p { max-width: 640px; margin-top: 26px; font-size: 1.25rem; color: #94a
 .btn-itch:hover { transform: translateY(-2px); box-shadow: 0 0 22px rgba(231,72,72,.6); }
 .btn-github img, .btn-itch img { width: 1.3em; height: 1.3em; }
 .btn-github img { filter: brightness(0); }
-.btn-itch img { filter: brightness(0) invert(1); }
 .btn-github p, .btn-itch p { margin: 0; }
 @keyframes waveGradient {
     0% { background-position: 0% 50%; } 25% { background-position: 100% 50%; }
@@ -280,17 +279,20 @@ iframe {
     color: #e2e8f0; background: radial-gradient(circle at top, #1e3a5f, var(--night));
     border: 2.5px solid var(--cyan);
 }
-.license { max-width: 760px; padding: 22px 26px; border-radius: 24px; box-shadow: 8px 8px 0 var(--cyan2); font-size: .95rem; }
+.license { max-width: 1080px; padding: 22px 26px; border-radius: 24px; animation: anim 5s ease-in-out infinite; font-size: .95rem; }
+@keyframes anim { 0%, 100% {box-shadow: 0 0 20px #ff0000; } 50% {box-shadow: 0 0 20px #ffffff;}}
+
 .warningAudio-desc {
     display: inline-block; margin: 28px 0 34px; padding: 10px 18px;
     font: 700 .95rem 'DM Sans', sans-serif; color: #ffb3a8;
     background: rgba(255,94,58,.1); border: 1px solid #ff5e3a; border-radius: 10px;
     text-shadow: 0 0 8px rgba(255,0,0,.7); box-shadow: 0 0 16px rgba(255,94,58,.4);
 }
-.audio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 26px; }
-.audio-card { padding: 16px 20px 18px; border-radius: 18px; box-shadow: 5px 5px 0 var(--cyan2); transition: transform .25s, box-shadow .25s; }
+
+.audio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 26px; padding: 1em; }
+.audio-card { padding: 1em; border-radius: 18px; box-shadow: 0 0 10px var(--cyan2); transition: transform .25s, box-shadow .25s; }
 .audio-card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--cyan2), 0 0 22px rgba(0,229,255,.35); }
-.audio-card p { display: flex; align-items: center; gap: 12px; font: 600 .85rem 'Orbitron', sans-serif; letter-spacing: .5px; color: #fff; }
+.audio-card p { display: grid; align-items: center; gap: 12px; font: 600 .85rem 'Orbitron', sans-serif; letter-spacing: .5px; color: #fff; }
 /* égaliseur qui s'anime au survol */
 .audio-card p::before {
     --b: linear-gradient(0deg, var(--cyan), #a78bfa);
@@ -341,10 +343,10 @@ footer {
     .card { padding: 20px; }
     section { padding: 50px 20px; }
 }
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .fl, h1::after, section::before, body::before, .audio-card p::before, .btn { animation: none; }
-}
+}*/
 
 /* =========================
    SEPERATOR
@@ -357,20 +359,6 @@ footer {
     background-size: 300% 300%;
     animation: waveLine 4s ease infinite;
     border-radius: 3px;
-}
-
-@keyframes waveLine {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .separator-animated-project{
