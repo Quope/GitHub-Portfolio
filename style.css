@@ -15,6 +15,7 @@
     --sky: #4ca8ff;
     --violet: #8b5cf6;
     --pink: #ff7eb6;
+    --green: #00ff9d;
     --line: 2.5px solid var(--ink);
 }
 
@@ -119,7 +120,7 @@ header > p { max-width: 640px; margin-top: 26px; font-size: 1.25rem; color: #94a
     background: radial-gradient(circle at top, #1e3a5f, var(--night));
     animation: cyberGlow 2s ease-in-out infinite, cyberGlowBorder 2s ease-in-out infinite;
 }
-@keyframes cyberGlowBorder { 0%,100% { border: 5px outset #ffffff; border-radius: 3px; } 65% { border: 5px outset #00ff9d; border-radius: 3px; } }
+@keyframes cyberGlowBorder { 0%,100% { border: 5px outset #ffffff; border-radius: 3px; } 65% { border: 5px outset var(--green); border-radius: 3px; } }
 @keyframes cyberGlow { 0%,100% { box-shadow: 0 0 5px var(--cyan); } 50% { box-shadow: 0 0 20px #00ff9d; } }
 
 .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
@@ -202,8 +203,8 @@ h2 {
 }
 a.tile::after, a.tile::before { border-radius: 20px; }
 a.tile::before { transform: translate(7px, 7px); }
-.tile:hover { transform: translate(-3px, -3px); }
-.tile:hover::before { transform: translate(10px, 10px); }
+.tile:hover { transform: translate(0px, -5px); }
+.tile:hover::before { transform: translate(-7px, -7px); box-shadow: 0 0 15px var(--green); }
 .tile img, .tile .ph { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 17.5px 17.5px 0 0; border-bottom: 2px solid var(--cyan); }
 .tile .ph { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-bottom: 2px solid var(--cyan); }
 .tile .ph {
@@ -226,14 +227,15 @@ a.tile::before { transform: translate(7px, 7px); }
     background: radial-gradient(circle at top, #1e3a5f, var(--night));
     border: 2.5px solid var(--cyan); transition: box-shadow .3s ease;
 }
-/* second fond décalé */
-.card::before, .tile::before {
+
+@keyframes glowCard { 0%,100% { box-shadow: 10px 10px 16px var(--cyan);} 50% { box-shadow: 20px 20px 16px var(--green); } }
+
+.tile::before {
     content: ""; position: absolute; inset: 0; z-index: -2; border-radius: 24px;
-    background: var(--blk, linear-gradient(135deg, #0000, #1e3a5f));
+    background: var(--blk, linear-gradient(135deg, #ffffff, #0099ff));
     transform: translate(8px, 8px); transition: transform .3s ease;
 }
-.card:hover { transform: translate(-3px, -3px); }
-.card:hover::before { transform: translate(11px, 11px); }
+
 .card:hover::after, .tile:hover::after { box-shadow: 0 0 28px rgba(0,229,255,.35); }
 
 .card h3 {
