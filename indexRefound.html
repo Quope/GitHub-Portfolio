@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quentin Lopes | Game Developer</title>
+    <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Bricolage+Grotesque:wght@800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="tri" viewBox="0 0 48 48"><path d="M24 7 L43 40 H5 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></symbol><symbol id="cir" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></symbol><symbol id="sq" viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></symbol><symbol id="crs" viewBox="0 0 48 48"><path d="M9 9 L39 39 M39 9 L9 39" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></symbol><symbol id="xa" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="currentColor"/><text x="24" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="24" fill="#0f172a">A</text></symbol><symbol id="xb" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="currentColor"/><text x="24" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="24" fill="#0f172a">B</text></symbol><symbol id="xx" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="currentColor"/><text x="24" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="24" fill="#0f172a">X</text></symbol><symbol id="xy" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="currentColor"/><text x="24" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="24" fill="#0f172a">Y</text></symbol></defs></svg>
+    <div class="floaters" aria-hidden="true">
+        <svg class="fl" style="top:3%;right:7%;--s:90px;--c:#ff5a6e;--r:0deg;--d:0s"><use href="#cir"/></svg>
+        <svg class="fl" style="top:360px;left:62%;--s:60px;--c:#5aa9ff;--r:10deg;--d:-2s"><use href="#xx"/></svg>
+        <svg class="fl" style="top:9%;right:24%;--s:56px;--c:#3ddc97;--r:15deg;--d:-3s"><use href="#tri"/></svg>
+        <svg class="fl" style="top:14%;left:3%;--s:64px;--c:#3ddc97;--r:0deg;--d:-1s"><use href="#xa"/></svg>
+        <svg class="fl" style="top:22%;right:4%;--s:70px;--c:#ff8fd8;--r:-10deg;--d:-4s"><use href="#sq"/></svg>
+        <svg class="fl" style="top:30%;left:2%;--s:58px;--c:#5aa9ff;--r:12deg;--d:-2s"><use href="#crs"/></svg>
+        <svg class="fl" style="top:38%;right:2%;--s:66px;--c:#ff5a6e;--r:0deg;--d:-5s"><use href="#xb"/></svg>
+        <svg class="fl" style="top:46%;left:3%;--s:72px;--c:#3ddc97;--r:-8deg;--d:-1s"><use href="#tri"/></svg>
+        <svg class="fl" style="top:53%;right:3%;--s:60px;--c:#ffd23c;--r:0deg;--d:-3s"><use href="#xy"/></svg>
+        <svg class="fl" style="top:60%;left:2%;--s:62px;--c:#ff5a6e;--r:0deg;--d:-6s"><use href="#cir"/></svg>
+        <svg class="fl" style="top:67%;right:2%;--s:70px;--c:#5aa9ff;--r:-14deg;--d:-2s"><use href="#crs"/></svg>
+        <svg class="fl" style="top:74%;left:3%;--s:64px;--c:#5aa9ff;--r:0deg;--d:-4s"><use href="#xx"/></svg>
+        <svg class="fl" style="top:81%;right:3%;--s:66px;--c:#ff8fd8;--r:14deg;--d:-1s"><use href="#sq"/></svg>
+        <svg class="fl" style="top:87%;left:2%;--s:58px;--c:#3ddc97;--r:0deg;--d:-5s"><use href="#xa"/></svg>
+        <svg class="fl" style="top:93%;right:4%;--s:72px;--c:#3ddc97;--r:-6deg;--d:-3s"><use href="#tri"/></svg>
+        <svg class="fl" style="top:97%;left:8%;--s:56px;--c:#ff5a6e;--r:0deg;--d:-2s"><use href="#cir"/></svg>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#about" data-i18n="menu.about">About</a></li>
+            <li><a href="#my-best-projects" data-i18n="menu.bestProjects">My Best Projects</a></li>
+            <li><a href="#projects-first-year" data-i18n="menu.firstYear">First Year</a></li>
+            <li><a href="#projects-second-year" data-i18n="menu.secondYear">Second Year</a></li>
+            <li><a href="#projects-third-year" data-i18n="menu.thirdYear">Third Year</a></li>
+            <li><a href="#music" data-i18n="menu.audio">Audio</a></li>
+            <li><a href="#contact" data-i18n="menu.contact">Contact</a></li>
+        </ul>
+        <div class="lang-floating">
+            <button onclick="setLanguage('fr')">FR</button>
+            <button onclick="setLanguage('en')">EN</button>
+        </div>
+    </nav>
+
+    <header>
+        <h1 data-i18n="header.name">Quentin Lopes</h1>
+        <p>Gameplay Programmer &amp; Music Composer</p>
+        <div class="chips">
+            <span>3C</span><span>Game feel</span><span>Unreal C++ / Blueprints</span><span>Unity C#</span><span>Music composition</span>
+        </div>
+        <div class="cta">
+            <a class="btn" href="#my-best-projects">Best projects</a>
+            <a class="btn alt" href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 data-i18n="about.title">About Me</h2>
+        <p data-i18n="about.text">
+            Game Development student specialized in Game Programming, with a strong focus on C++, Unreal Engine and Blueprints, C# and Unity.<br><br>
+
+            I am particularly interested in character and camera systems to find the better feeling I can in my projetcs.<br>
+            That's why I want to become a Game Programmer specialized in 3C systems ! <br>
+            I also work on music composition and sound design, as I believe audio plays a critical role in player experience.<br><br>
+
+            I enjoy understanding how to make the best game feeling for different situations and games.<br>
+        </p>
+    </section>
+
+    <!-- ================= BEST PROJECTS ================= -->
+    <section id="my-best-projects">
+        <h2 data-i18n="menu.bestProjects">My Best Projects</h2>
+        <div class="tiles">
+            <a class="tile" href="#seccia" style="--c:#ff9900"><span class="ph">DGC</span><b>DETECTIVE GC</b><small>Custom engine · Point &amp; Click</small></a>
+            <a class="tile" href="#kathos" style="--c:var(--mint)"><img src="Assets/In Game Kathos.png" alt="KATHOS" loading="lazy"><b>KATHOS</b><small>C++ · SFML · Lead Tech</small></a>
+            <a class="tile" href="#arena" style="--c:#ff8800"><img src="Assets/InGameArena.png" alt="Arena Shooter" loading="lazy"><b>Arena Shooter</b><small>UE 5.6 · Blueprints</small></a>
+            <a class="tile" href="#casino" style="--c:#ff3b3b"><img src="Assets/GJ 2 - Casino.png" alt="Crazy Gambling Casino" loading="lazy"><b>Crazy Gambling Casino</b><small>UE 5.6 · Game Jam 40h</small></a>
+        </div>
+    </section>
+
+    <!-- ================= FIRST YEAR ================= -->
+    <section id="projects-first-year">
+        <h2 data-i18n="firstYear.title">First Year Projects</h2>
+
+        <div class="card" id="sywar">
+            <h3>SYWAR, THE QUEST OF JAAJ</h3><br>
+            <span class="tech">C++ · SFML</span>
+
+            <p data-i18n="firstYear.sywar.desc">Individual Project - Turn-based combat system featuring clickable areas to choose various actions. Built in C++ with SFML over the course of one week.<br>
+            This is my first gaming project in Gaming Campus. I had never really code before, I've learn all the bases of coding with this project.<br>
+            <br> The code in it is ugly, all the code is in one file main with so mush mistakes. I keep it like that to remember where I come from to see my progression and be proud on myself !</p>
+
+            <div class="shots">
+                <img src="Assets/Menu.png" alt="Menu" loading="lazy">
+                <img src="Assets/In Game.png" alt="Gameplay" loading="lazy">
+            </div>
+            <iframe title="SYWAR" src="https://www.youtube.com/embed/PqbKrxIVmHA" loading="lazy" allowfullscreen></iframe>
+
+            <a href="https://github.com/quope/SYWAR-THE-QUEST-OF-JAAJ" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+
+        <div class="card" id="seccia">
+            <h3>DETECTIVE GC</h3><br>
+            <span class="tech">Custom Engine</span>
+
+            <p data-i18n="firstYear.detective.desc">Individual Project - Point & Click game developed on a custom engine by Sylvain Seccia (Seccia.dev). Due to the absence of dedicated artists, the environment visuals were produced using AI‑generated assets.<br>
+                With this project I've discovered the aspect of working on a custom engine. It gives me the occasion to had different approach to produce a game with the constraints imposed.
+            </p>
+
+            <iframe title="DETECTIVE GC" src="https://www.youtube.com/embed/jItk-01n1Lw" loading="lazy" allowfullscreen></iframe>
+        </div>
+
+        <div class="card" id="kathos">
+            <h3>KATHOS</h3><br>
+            <span class="tech">C++ · SFML</span>
+
+            <p data-i18n="firstYear.kathos.desc"> Team Project - Large‑scale team project where I acted as Lead Tech, coordinating 4 programmers, 2 artists, and 2 business students. Built in C++ with SFML within a three‑week timeframe. <br>
+                This project gave me the opportunity to work with a large team, it developed my organisation, my communication and my patience... It developed my capacity to read clearly the code of my mates and correct them when it was necessary.
+            </p>
+
+            <div class="shots">
+                <img src="Assets/Menu Kathos.png" alt="Menu" loading="lazy">
+                <img src="Assets/In Game Kathos.png" alt="Gameplay" loading="lazy">
+                <img src="Assets/In Game Boss Kathos.png" alt="Boss" loading="lazy">
+            </div>
+            <iframe title="KATHOS" src="https://www.youtube.com/embed/t3mkjH3Qo0g" loading="lazy" allowfullscreen></iframe>
+
+            <a href="https://github.com/quope/KATHOS" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SECOND YEAR ================= -->
+    <section id="projects-second-year">
+        <h2 data-i18n="secondYear.title">Second Year Projects</h2>
+
+        <div class="card" id="pink">
+            <h3>THE PINK PARADOX</h3><br>
+            <span class="tech">Runner · 3C</span>
+
+            <p data-i18n="secondYear.pink.desc">Team Project - Runner game focused on player physics and 3C. <br>
+                Pink Paradox was my first second-year project, designed as a refresher of the concepts learned during the first year. <br>
+                In a team of 3 programmers, we had to create a Runner while focusing on the 3C principles (Character, Camera, Controller). <br>
+                The objective was to create smooth and enjoyable gameplay, supported by a procedurally generated environment that evolves according to the player's speed.
+            </p>
+
+            <div class="shots">
+                <img src="Assets/Menu PINK.png" alt="Menu" loading="lazy">
+                <img src="Assets/Pause Menu PINK.png" alt="Pause" loading="lazy">
+                <img src="Assets/In Game PINK.png" alt="Gameplay" loading="lazy">
+                <img src="Assets/Game Over PINK.png" alt="Game Over" loading="lazy">
+            </div>
+            <iframe title="THE PINK PARADOX" src="https://www.youtube.com/embed/yFdXF08ZCjs" loading="lazy" allowfullscreen></iframe>
+
+            <a href="https://github.com/quope/THE-PINK-PARADOX" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+
+        <div class="card" id="blender">
+            <h3>Blender Initiation</h3><br>
+            <span class="tech">Blender</span>
+
+            <p data-i18n="secondYear.blender.desc">Introduction to artistic vocabulary and foundational 3D concepts using Blender, aimed at improving collaboration with artists. Completed in two weeks. <br>
+                I don't have an artist soul but this project was fun to do ^^
+            </p>
+
+            <div class="shots">
+                <img src="Assets/Dague.png" alt="Dague" loading="lazy">
+                <img src="Assets/Ricard.png" alt="Ricard" loading="lazy">
+            </div>
+        </div>
+
+        <div class="card" id="arena">
+            <h3>Unreal Engine Arena Shooter</h3><br>
+            <span class="tech">UE 5.6 · Blueprints</span>
+
+            <p data-i18n="secondYear.arena.desc">Team Project - A large‑scale collaborative project bringing together G‑Art and G‑Tech students, combining artistic and programming expertise. Developed using Unreal Engine 5.6 within a three‑week timeframe.
+                With a team of 3-4, this project was the occasion to work on Unreal Engine (only Blueprints). <br>
+                I have worked on the character, the shoot system, the boss, the sound design, the music and all the map design (place holder for artists).
+            </p>
+
+            <div class="shots">
+                <img src="Assets/InGameArena.png" alt="InGame" loading="lazy">
+                <img src="Assets/doorArena.png" alt="InGame2" loading="lazy">
+                <img src="Assets/bossArena.png" alt="Boss" loading="lazy">
+                <img src="Assets/MapArena.png" alt="Map" loading="lazy">
+            </div>
+            <iframe title="Arena Shooter" src="https://www.youtube.com/embed/a7I49ipp-RU" loading="lazy" allowfullscreen></iframe>
+
+            <a href="https://github.com/ArenaShooter/ArenaShooter_2025/tree/GRP_7_master" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+
+        <div class="card" id="casino">
+            <h3>Game Jam Project : Crazy Gambling Casino</h3><br>
+            <span class="tech">UE 5.6 · Blueprints</span>
+
+            <p data-i18n="secondYear.casino.desc">Game Jam Project - Made with a team of 19 persons (12 G-Tech and 7 G-Art) with Unreal Engine 5.6 in 40h. I've worked on the weapon, musics, sound design and organisation of all the team.<br>
+                With this Jam, I have discovered what reel team organisation was : Communication on all the task or features you worked on or add to the project. Push & Merge Git synchronisation, communication with artist to know there work and add their creation to the project progressively.
+            </p>
+
+            <div class="shots">
+                <img src="Assets/GJ 2 - Casino.png" alt="Casino" loading="lazy">
+                <img src="Assets/GJ 2 - Zone de Combat.png" alt="FightZone" loading="lazy">
+                <img src="Assets/GJ 2 - Zone de Combat 2.png" alt="FightZone2" loading="lazy">
+            </div>
+            <iframe title="Crazy Gambling Casino" src="https://www.youtube.com/embed/bXOC_WV56n0" loading="lazy" allowfullscreen></iframe>
+
+            <a href="https://github.com/quope/Game-Jam-2-2026---Gaming-Campus-" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+
+        <div class="card" id="internship">
+            <h3>Earniverse (Internship 2 months)</h3><br>
+            <span class="tech">UE 5.4 · Blueprints</span>
+
+            <p data-i18n="secondYear.intern.desc">Large‑scale Metaverse project, where I contributed to the creation and customization of vehicles in Earniverse, including boats, hoverboards, and horses.<br>
+                That was a really interesting internship for project organisation. If your project have no folder architecture, its hard to work in it. Now, I keep better attention to my folders in my projects.<br>
+                This experience allowed me to discover remote work. As I am used to working from home, adapting to this environment was not an issue.
+            </p>
+
+            <div class="shots">
+                <img src="Assets/Hoverboard.png" alt="Hoverboards" loading="lazy">
+                <img src="Assets/Horse.png" alt="Horses" loading="lazy">
+                <img src="Assets/Boats.png" alt="Boats" loading="lazy">
+            </div>
+            <iframe title="Earniverse" src="https://www.youtube.com/embed/L-oDGnGfn8M" loading="lazy" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- ================= THIRD YEAR ================= -->
+    <section id="projects-third-year">
+        <h2 data-i18n="thirdYear.title">Third Year Projects</h2>
+
+        <div class="card" id="unity">
+            <h3>3C &amp; Unity base</h3><br>
+            <span class="tech">Unity · C#</span>
+
+            <p data-i18n="thirdYear.unity.desc">Project focused on Unity fundamentals and 3C systems for both vehicles and character.<br>
+                The project requirements were fairly simple, so I decided to go beyond the initial scope by creating a complete environment to give the project a more polished and professional look.<br>
+                My main goal was to create the best possible camera experience for the player and deliver strong game feel through responsive controls and smooth interactions.<br>
+                I really enjoyed working on this project. At the time, I was not yet certain about the type of developer I wanted to become.<br>
+                Thanks to this project, I realized that I want to pursue a career as a Gameplay Programmer, ideally specializing in 3C systems (Character, Camera & Controller).
+            </p>
+
+            <div class="shots">
+                <img src="Assets/3C - Map.png" alt="map" loading="lazy">
+                <img src="Assets/3C - Vue d'ensemble.png" alt="view" loading="lazy">
+                <img src="Assets/3C - voiture.png" alt="car" loading="lazy">
+                <img src="Assets/3C - Helico.png" alt="helico" loading="lazy">
+                <img src="Assets/3C - train.png" alt="train" loading="lazy">
+                <img src="Assets/3C - Train en marche.png" alt="train2" loading="lazy">
+            </div>
+
+            <a href="https://github.com/Quope/3C-Portfolio-Demonstration.git" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+
+        <div class="card" id="bouclette">
+            <h3>Bouclette</h3><br>
+            <span class="tech">UE 5.7 · Blueprints</span>
+
+            <p data-i18n="thirdYear.bouclette.desc"> Bouclette is a Game Jam project made during the CStudio Event in 46 Hours on Unreal Engine 5.7.<br>
+                That was my first Game Jam outside the Gaming Campus with Ubisoft, MadBox and Voodoo that represented the jury.<br>
+                A reel challenge because we were two programmers and one artist. That was a great experience because we had the opportunity to confront our skills to other persons and we win the price of Originality !
+            </p>
+
+            <div class="shots">
+                <img src="Assets/Bouclette1.png" alt="bouclette1" loading="lazy">
+                <img src="Assets/Bouclette2.png" alt="bouclette2" loading="lazy">
+                <img src="Assets/Bouclette3.png" alt="bouclette3" loading="lazy">
+                <img src="Assets/Bouclette4.png" alt="bouclette4" loading="lazy">
+                <img src="Assets/Bouclette5.png" alt="bouclette5" loading="lazy">
+                <img src="Assets/Bouclette6.png" alt="bouclette6" loading="lazy">
+            </div>
+            <iframe title="Bouclette" src="https://www.youtube.com/embed/mkfewKRLSIw" loading="lazy" allowfullscreen></iframe>
+
+            <a href="https://github.com/Quope/Projet_Bouclette" class="btn-itch">
+                <img src="Assets/Logo Itchio.png" alt="itch">
+                <p data-i18n="btn.itch">Play on itch.io !</p>
+            </a>
+            <a href="https://github.com/quope/" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+
+        <div class="card" id="numbadumb">
+            <h3>Unity Game Jam 2026 - Numbadumb</h3><br>
+            <span class="tech">Unity · C#</span>
+
+            <p data-i18n="thirdYear.numb.desc"> Numbadumb is a mini-game compilation inspired by WarioWare. <br>
+                This project was created with 2 friends for the Unity Game Jam 2026 in one week. <br>
+                The theme was "Lucky Number" !<br>
+
+                I worked on the sound design, musics, and the following mini-games : <br>
+                <br>
+                - BoomBalloon <br>
+                - ClownBonk <br>
+                - ExploFlies <br>
+                - RunChicken <br>
+                - ShootTheDuck <br>
+            </p>
+
+            <div class="shots">
+                <img src="Assets/MenuNumb.png" alt="menu" loading="lazy">
+                <img src="Assets/IntroNumbers.png" alt="intro" loading="lazy">
+                <img src="Assets/Transitions.png" alt="transitions" loading="lazy">
+                <img src="Assets/BoomBalloon.png" alt="BoomBalloon" loading="lazy">
+                <img src="Assets/ShootTheDuck.png" alt="ShootTheDuck" loading="lazy">
+                <img src="Assets/ClownBonk.png" alt="ClownBonk" loading="lazy">
+            </div>
+            <iframe title="Numbadumb" src="https://www.youtube.com/embed/Zk-pFzY-uSk" loading="lazy" allowfullscreen></iframe>
+
+            <a href="https://poisskaille.itch.io/numbadumb" class="btn-itch">
+                <img src="Assets/Logo Itchio.png" alt="itch">
+                <p data-i18n="btn.itch">Play in your browser on itch.io !</p>
+            </a>
+            <a href="https://github.com/quope/numbadumb" class="btn-github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github">
+                <p data-i18n="btn.github">Check the GitHub repository !</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= AUDIO ================= -->
+    <section id="music">
+        <h2 data-i18n="audio.title">Musics</h2>
+
+        <p class="license" data-i18n="audio.desc">The works listed below are made available under the<br>
+            Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license.<br>
+            <br>
+            You are permitted to use and distribute these music tracks,<br>
+            including for commercial purposes, provided that appropriate credit is given to the author like this : <br>
+            <br>
+            Music : Quentin LOPES / Quope<br>
+            Source : https://quope.github.io/GitHub-Portfolio/
+        </p>
+
+        <h3 class="warningAudio-desc" data-i18n="warningAudio.desc">All modification, adaptation, or creation of derivative works from any music track is strictly forbidden.</h3>
+
+        <div class="audio-grid">
+            <div class="audio-card">
+                <p data-i18n="track.track1.desc">Ambiance 1 for Detective GC</p>
+                <audio controls preload="none"><source src="audio/InGameVpileLoop.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <p data-i18n="track.track2.desc">Ambiance 2 for Detective GC</p>
+                <audio controls preload="none"><source src="audio/Second ambiance music.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <p data-i18n="track.DFA.desc">Ambiance for a daytime fantasy forest biome</p>
+                <audio controls preload="none"><source src="audio/Day Forest Ambiance.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <p data-i18n="track.NFA.desc">Ambiance for a forest biome set during the night</p>
+                <audio controls preload="none"><source src="audio/Night Forest Ambiance.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <p data-i18n="track.MCBA.desc">Ambiance for a city builder medieval</p>
+                <audio controls preload="none"><source src="audio/Medieval City Building Ambiance.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <p data-i18n="track.MF.desc">Background Music for a Fantasy menu</p>
+                <audio controls preload="none"><source src="audio/Menu V1.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <p data-i18n="track.WA.desc">Ambient for a snowy fantasy biome</p>
+                <audio controls preload="none"><source src="audio/Winter Ambiance Version 2 reglage.mp3" type="audio/mpeg"></audio>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-box">
+            <h2 data-i18n="menu.contact">Contact</h2>
+            <p>Let's make something fun together.</p>
+            <a class="btn alt" href="mailto:quentin.lopes@orange.fr">quentin.lopes@orange.fr</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>2026 - Quentin Lopes</p>
+        <p class="ai-note">
+            <span data-lang="en">Site designed with AI assistance — my work focuses on game programming (C++ / C#).</span>
+            <span data-lang="fr" hidden>Site conçu avec l'aide de l'IA — mon travail se concentre sur la programmation de jeux (C++ / C#).</span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    /* Affiche la mention IA dans la langue active, quelle que soit la façon dont script.js change la langue */
+    (function () {
+        var probe = document.querySelector('[data-i18n="menu.about"]');
+        if (!probe) return;
+        function sync() {
+            var l = probe.textContent.trim() === 'About' ? 'en' : 'fr';
+            document.querySelectorAll('.ai-note [data-lang]').forEach(function (s) { s.hidden = s.dataset.lang !== l; });
+        }
+        new MutationObserver(sync).observe(probe, { childList: true, characterData: true, subtree: true });
+        sync();
+    })();
+    </script>
+</body>
+</html>
