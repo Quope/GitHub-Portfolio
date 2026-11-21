@@ -44,6 +44,24 @@
   "track.MCBA.desc": "Musique d'ambiance pour un city builder medieval",
   "track.MF.desc": "Musique de fond pour un menu Fantasy",
   "track.WA.desc": "Musique d'ambiance pour un biome enneigé fantastique",
+
+  "pro.title": "Expériences hors du jeu vidéo",
+  "pro.desc": "Voici toutes mes expériences en dehors du jeu vidéo, si cela vous intéresse.",
+
+  "pro.job1.title": "POLY DRUCK PROSYA - Conditionneur - <strong>Interim</strong> <br>01/01/2024 au 15/04/2024",
+  "pro.job1.desc": "Mission d'intérim de 15 jours en tant que conditionneur, en autonomie sur plusieurs lignes de production. <br>Récupération des pièces plastiques en sortie de machine, mise en cartons et palettisation, en coordination avec un collègue pour le filmage et le stockage des palettes. <br>Respect strict des consignes de sécurité (port des chaussures de sécurité) et maintien d'une cadence soutenue pour ne pas retarder la production en cours.",
+  "pro.job1.skill1": "Autonomie",
+  "pro.job1.skill2": "Rigueur",
+  "pro.job1.skill3": "Sécurité au travail",
+  "pro.job1.skill4": "Cadence soutenue",
+  "pro.job1.skill5": "Polyvalence",
+  "pro.job1.skill6": "Travail d'équipe",
+
+  "pro.job2.title": "POLY DRUCK PROSYA - Packaging Operator - <strong>Temp work</strong> - 01/01/2024 to 15/04/2024",
+  "pro.job2.desc": "Courte description du poste et de ce que tu y as fait.",
+  "pro.job3.title": "POLY DRUCK PROSYA - Packaging Operator - <strong>Temp work</strong> - 01/01/2024 to 15/04/2024",
+  "pro.job3.desc": "Courte description du poste et de ce que tu y as fait.",
+
   "contact.tagline": "À la recherche d'une alternance, d'un stage ou de toute opportunité en programmation gameplay me permettant de continuer à progresser et à relever de nouveaux défis !",
   "footer.ai": "Site conçu avec l'aide de l'IA — mon travail se concentre sur la programmation de jeux (C++ / C#)."
 }

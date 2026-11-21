@@ -44,6 +44,24 @@
   "track.MCBA.desc": "Music Ambiance for a city builder medieval",
   "track.MF.desc": "Background Music for a Fantasy menu",
   "track.WA.desc": "Ambient Music for a snowy fantasy biome",
+
+  "pro.title": "Experience Outside Gaming",
+  "pro.desc": "Here's all of my experiences outside gaming. If you are interested about it.",
+  "pro.job1.title": "POLY DRUCK PROSYA - Packaging Operator - <strong>Temp Work</strong> <br>01/01/2024 to 15/04/2024",
+  "pro.job1.desc": "15-day temp assignment as a packaging operator, working independently across several production lines. <br>I collected plastic parts coming off the machines, packed them into cartons and loaded them onto pallets, coordinating with a colleague to wrap the pallets and move them into storage. <br>Strict compliance with safety rules (safety shoes required) and a sustained pace to keep the ongoing production on schedule.",
+  "pro.job1.skill1": "Autonomy",
+  "pro.job1.skill2": "Rigor",
+  "pro.job1.skill3": "Workplace safety",
+  "pro.job1.skill4": "High production pace",
+  "pro.job1.skill5": "Versatility",
+  "pro.job1.skill6": "Teamwork",
+  
+  "pro.job2.title": "Job title",
+  "pro.job2.desc": "Short description of the role and of what you did.",
+
+  "pro.job3.title": "Job title",
+  "pro.job3.desc": "Short description of the role and of what you did.",
+
   "contact.tagline": "Currently seeking an apprenticeship, internship, or any opportunity in gameplay programming to further develop my skills and take on exciting new challenges.",
   "footer.ai": "Site designed with AI assistance — my work focuses on game programming (C++ / C#)."
 }

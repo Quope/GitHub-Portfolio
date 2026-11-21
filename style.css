@@ -386,3 +386,18 @@ footer {
         background-position: 0% 50%;
     }
 }
+
+/* =========================
+   EXPERIENCE OUTSIDE GAMING
+========================= */
+.proExp > p { max-width: 760px; margin: -12px 0 36px; color: #94a3b8; }
+.jobs { display: block; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 36px; }
+.jobs .card { margin-bottom: 25px; }
+.job h3 { display: block; }
+.job p { margin-top: 12px; }
+.skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.skills span {
+    padding: 4px 13px; font: 500 .78rem 'JetBrains Mono', monospace; color: #ffffff;
+    background: rgba(15,23,42,.6); border: 1px solid var(--cyan); border-radius: 99px;
+    box-shadow: 0 0 8px rgba(0,229,255,.3);
+}
