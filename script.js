@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("lang") || "en";
     setLanguage(savedLang);
 });
+
+const cvFile = translations["cv.file"];
+
+document.getElementById("cv-open").href = cvFile;
+document.getElementById("cv-download").href = cvFile;
+document.getElementById("cv-preview").src = cvFile + "#view=FitH";

@@ -111,6 +111,13 @@
   "pro.job7.skill4": "Hygiène et propreté",
   "pro.job7.skill5": "Adaptabilité",
 
+  "menu.cv": "Mon CV",
+  "cv.title": "Mon CV",
+  "cv.desc": "Consultez mon CV directement ci-dessous ou ouvrez-le dans un nouvel onglet pour le lire en plein écran.",
+  "cv.open": "Ouvrir en plein écran",
+  "cv.download": "Télécharger mon CV",
+  "cv.file": "Assets/CV GC - FR.pdf.pdf",
+
   "contact.tagline": "À la recherche d'une alternance, d'un stage ou de toute opportunité en programmation gameplay me permettant de continuer à progresser et à relever de nouveaux défis !",
   "footer.ai": "Site conçu avec l'aide de l'IA — mon travail se concentre sur la programmation de jeux (C++ / C#)."
 }
