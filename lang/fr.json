@@ -118,6 +118,7 @@
   "cv.open.href": "Assets/CV GC - FR.pdf",
   "cv.download": "Télécharger mon CV",
   "cv.download.href": "Assets/CV GC - FR.pdf",
+  "cv-preview.href": "Assets/CV GC - FR.pdf",
 
   "contact.tagline": "À la recherche d'une alternance, d'un stage ou de toute opportunité en programmation gameplay me permettant de continuer à progresser et à relever de nouveaux défis !",
   "footer.ai": "Site conçu avec l'aide de l'IA — mon travail se concentre sur la programmation de jeux (C++ / C#)."

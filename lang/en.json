@@ -117,6 +117,7 @@
   "cv.open.href": "Assets/CV GC - EN.pdf",
   "cv.download": "Download my CV",
   "cv.download.href": "Assets/CV GC - EN.pdf",
+  "cv-preview.href": "Assets/CV GC - EN.pdf",
 
   "contact.tagline": "Currently seeking an apprenticeship, internship, or any opportunity in gameplay programming to further develop my skills and take on exciting new challenges.",
   "footer.ai": "Site designed with AI assistance — my work focuses on game programming (C++ / C#)."
