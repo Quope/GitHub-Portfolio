@@ -10,12 +10,16 @@ function setLanguage(lang) {
                     el.innerHTML = data[key];
                 }
 
-                    if (data[key + ".href"]) {
+                if (data[key + ".href"]) {
+                    if (el.tagName === "IFRAME") {
+                        el.src = data[key + ".href"];
+                        } else {
                         el.href = data[key + ".href"];
-                }
-            });
-        })
-        .catch(err => console.error("Erreur de chargement langue :", err));
+                        }
+                    }
+                });
+    })
+    .catch(err => console.error("Erreur de chargement langue :", err));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
