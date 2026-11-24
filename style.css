@@ -260,7 +260,7 @@ a.tile::before { transform: translate(7px, 7px); }
 .card p { max-width: 80ch; }
 .card > p + p { margin-top: 4px; }
 
-.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); gap: 14px; margin-top: 22px; } /*ici on change la taille des bidules*/
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(460px, 100%), 1fr)); gap: 14px; margin-top: 22px; } /*ici on change la taille des bidules*/
 .shots img {
     width: 100%; aspect-ratio: 16/9; object-fit: cover;
     border: 1px solid rgba(0,200,255,.2); border-radius: 10px;
@@ -344,6 +344,7 @@ footer {
     .fl { --s: 44px; }
     .card { padding: 20px; }
     section { padding: 50px 20px; }
+    .shots { grid-template-columns: repeat(2, 1fr); gap: 8px; } /* miniatures sur téléphone : 2 par ligne */
 }
 /*@media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
